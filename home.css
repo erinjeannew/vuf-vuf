@@ -60,7 +60,7 @@
   }
 
   .learn-more-img {
-    content: url(/img/learn-more.png);
+    content: url(img/learn-more.png);
   }
 
   #features-h2 {
@@ -84,7 +84,7 @@
   }
 
   #hero-img {
-    content: url(/img/hero-image-desktop.jpg);
+    content: url(img/hero-image-desktop.jpg);
   }
 
   #hero-text,
@@ -103,7 +103,7 @@
   }
 
   .learn-more-img {
-    content: url(/img/learn-more-md.jpg);
+    content: url(img/learn-more-md.jpg);
   }
 
   .learn-more-bkgd {
@@ -154,7 +154,7 @@
   }
 
   .learn-more-img {
-    content: url(/img/learn-more.png);
+    content: url(img/learn-more.png);
   }
 
   #testimonials-title {
