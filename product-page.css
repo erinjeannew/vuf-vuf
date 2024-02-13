@@ -1,0 +1,51 @@
+/* Hiding larger screen section */
+#related-products {
+  display: none !important;
+}
+
+/* MEDIA QUERIES */
+
+/* Bootstrap breakpoint: sm (>= 576px) */
+@media only screen and (min-width: 576px) {
+  /* add media queries here */
+}
+
+/* Bootstrap breakpoint: md (>= 768px) */
+@media only screen and (min-width: 768px) {
+  .breadcrumb {
+    margin-top: 1rem !important;
+    margin-bottom: 3rem !important;
+  }
+
+  .product-container-imgs {
+    padding-right: 1.5rem !important;
+  }
+}
+
+/* Bootstrap breakpoint: lg (>= 992px) */
+@media only screen and (min-width: 992px) {
+  /* Hiding smaller screen sections */
+  #related-products-sm {
+    display: none !important;
+  }
+
+  #related-products {
+    display: flex !important;
+  }
+
+  #related-products {
+    margin-bottom: 5rem !important;
+  }
+
+  .product-container {
+    margin-bottom: 4.5rem !important;
+  }
+}
+
+/* Bootstrap breakpoint: xl (>= 1200 px) */
+@media only screen and (min-width: 1200px) {
+  .breadcrumb {
+    margin-top: 3rem !important;
+    margin-bottom: 5rem !important;
+  }
+}

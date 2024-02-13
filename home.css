@@ -1,0 +1,202 @@
+/* Hiding larger screen sections */
+#new-products,
+#learn-more,
+#testimonials {
+  display: none !important;
+}
+
+/* Hero Section */
+.hero-text-em {
+  font-style: italic;
+  font-weight: 700;
+}
+
+#hero-details {
+  width: 60% !important;
+}
+
+#hero-text,
+.learn-more-txt {
+  font-size: 1.3rem;
+}
+
+/* Learn More & FAQ*/
+#learn-more-sm,
+#faq {
+  margin-bottom: 4rem !important;
+}
+
+.learn-more-bkgd {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1.5rem 2rem !important;
+}
+
+/* FAQs */
+#faq {
+  background-color: #f1f1ef;
+}
+
+/* MEDIA QUERIES */
+/* Smaller mobiles: xs (>= 420) */
+@media only screen and (min-width: 420px) {
+  #hero-text,
+  .learn-more-txt {
+    font-size: 1.6rem;
+  }
+}
+
+/* Bootstrap breakpoint: sm (>= 576px) */
+@media only screen and (min-width: 576px) {
+  #hero-details {
+    margin-left: 0.5rem !important;
+  }
+
+  #hero-text {
+    font-size: 2.2rem;
+  }
+
+  .learn-more-txt {
+    font-size: 2rem;
+  }
+
+  .learn-more-img {
+    content: url(/img/learn-more.png);
+  }
+
+  #features-h2 {
+    text-align: left !important;
+  }
+
+  #learn-more-sm,
+  #faq {
+    margin-bottom: 4.5rem !important;
+  }
+
+  #features {
+    margin-bottom: 0.5rem !important;
+  }
+}
+
+/* Bootstrap breakpoint: md (>= 768px) */
+@media only screen and (min-width: 768px) {
+  #new-collection-title {
+    padding-top: 1rem !important;
+  }
+
+  #hero-img {
+    content: url(/img/hero-image-desktop.jpg);
+  }
+
+  #hero-text,
+  .learn-more-txt {
+    font-size: 2rem;
+  }
+
+  #hero-details {
+    padding-left: 2.5rem !important;
+    width: 50% !important;
+  }
+
+  #faq {
+    width: 80% !important;
+    border-radius: 0.5rem;
+  }
+
+  .learn-more-img {
+    content: url(/img/learn-more-md.jpg);
+  }
+
+  .learn-more-bkgd {
+    padding: 2.5rem !important;
+    width: 50% !important;
+  }
+
+  .learn-more-txt {
+    font-size: 2rem;
+  }
+}
+
+/* Bootstrap breakpoint: lg (>= 992px) */
+@media only screen and (min-width: 992px) {
+  /* Hiding smaller screen sections */
+  #new-products-sm,
+  #learn-more-sm,
+  #testimonials-sm {
+    display: none !important;
+  }
+
+  /* Display larger screen sections */
+  #new-products,
+  #learn-more,
+  #testimonials {
+    display: flex !important;
+  }
+
+  #new-products {
+    margin-bottom: 4rem !important;
+  }
+
+  #hero-text {
+    font-size: 2.5rem;
+  }
+
+  #faq {
+    width: 75% !important;
+  }
+
+  #learn-more {
+    padding: 0 2rem !important;
+    margin-bottom: 4rem !important;
+  }
+
+  .learn-more-txt {
+    font-size: 2rem;
+  }
+
+  .learn-more-img {
+    content: url(/img/learn-more.png);
+  }
+
+  #testimonials-title {
+    margin-bottom: 2rem !important;
+  }
+
+  #testimonials-h2 {
+    text-align: left !important;
+  }
+
+  #learn-more {
+    margin-bottom: 5rem !important;
+  }
+
+  #features {
+    margin-bottom: 2rem !important;
+  }
+
+  #faq {
+    margin-bottom: 6rem !important;
+  }
+
+  #testimonials {
+    margin-bottom: 6rem !important;
+  }
+}
+
+/* Bootstrap breakpoint: xl (>= 1200 px) */
+@media only screen and (min-width: 1200px) {
+  #new-collection-title {
+    padding-top: 3rem !important;
+  }
+
+  #new-products {
+    margin-bottom: 4rem !important;
+  }
+
+  #hero-details {
+    padding-left: 6.5rem !important;
+  }
+
+  .learn-more-bkgd {
+    padding: 3rem !important;
+  }
+}

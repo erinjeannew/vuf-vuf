@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VUF-VUF | Dog beds</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link href="/style.css" rel="stylesheet" />
+    <link href="/home.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <!-- Navbar -->
+      <nav id="navbar" class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+          <a
+            id="brand-name"
+            class="navbar-brand pb-0 fw-bold"
+            href="/index.html"
+            >VUF &#9679; VUF</a
+          >
+          <button
+            class="navbar-toggler border border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Link -->
+            <ul
+              class="navbar-nav navbar-links d-flex gap-2 mt-1 mb-2 mb-lg-0 ms-auto me-2"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-medium px-3 rounded-3"
+                  href="/index.html#new-collection-title"
+                  >SHOP</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link px-3 rounded-3"
+                  aria-current="page"
+                  href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 rounded-3" href="/index.html#features"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 rounded-3" href="/index.html#faq"
+                  >FAQ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3 rounded-3" href="#footer">Contact</a>
+              </li>
+            </ul>
+            <!-- Icons -->
+            <ul class="navbar-nav navbar-icons d-flex gap-2 flex-row">
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link px-3 py-2 rounded-3" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link px-3 py-2 rounded-3" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link px-3 py-2 rounded-3" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-cart2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Header (hero image) -->
+      <header class="row position-relative m-auto mb-5">
+        <div class="col p-0">
+          <img
+            id="hero-img"
+            src="/img/hero-image-mobile.jpg"
+            class="img-fluid p-0"
+            alt="Staffordshire bull terrier puppy sitting on a woven, natural fibre Vuf-Vuf dog bed on a beige background"
+          />
+          <div
+            id="hero-details"
+            class="position-absolute z-1 top-50 ms-2 ps-3 translate-middle-y"
+          >
+            <h1 id="hero-text" class="display-6 mb-4 fw-semibold">
+              Your dog will spend <span class="hero-text-em">half</span> of
+              their life asleep. We make sure they're
+              <span class="hero-text-em">comfortable</span>.
+            </h1>
+            <!-- Link button -->
+            <a
+              id="hero-btn"
+              class="btn btn-lg border-0 px-3 pb-1"
+              href="#new-collection-title"
+              >Shop Now</a
+            >
+          </div>
+        </div>
+      </header>
+      <!-- New Collection -->
+      <div class="section-container mx-auto px-2">
+        <!-- New collection title-->
+        <div
+          id="new-collection-title"
+          class="row d-flex align-items-center px-3 mx-auto"
+        >
+          <div class="col-sm-6 col-xs-12 px-0 pt-1">
+            <h2 class="text-uppercase d-inline fw-bold fs-6">New Collection</h2>
+          </div>
+          <div
+            class="browse-products col-sm-6 col-xs-12 p-0 d-flex justify-content-start"
+          >
+            <a
+              class="browse-products-lnk text-uppercase fw-normal link-offset-1"
+              href="#new-collection-title"
+              >Browse All Products</a
+            >
+          </div>
+        </div>
+        <!-- LARGER screen (new-products) -->
+        <div
+          id="new-products"
+          class="row gx-4 px-3 d-flex justify-space-between mb-5"
+          style="display: none"
+        >
+          <!-- Product #1 -->
+          <div class="col-4">
+            <div class="card border-0 flex-fill">
+              <a class="product-img stretched-link" href="/product-page.html"
+                ><img
+                  src="img/toto1.jpg"
+                  class="card-img-top rounded-3"
+                  alt="Teepee-style Vuf-Vuf dog bed in light grey canvas with cactus print"
+              /></a>
+              <div class="card-body ps-0">
+                <span class="d-block text-uppercase mb-0 fw-semibold"
+                  >Toto</span
+                >
+                <span class="fw-light">£75</span>
+              </div>
+            </div>
+          </div>
+          <!-- Product #2 -->
+          <div class="col-4">
+            <div class="card border-0 flex-fill">
+              <a class="product-img stretched-link" href="#new-collection-title"
+                ><img
+                  src="img/fleur.jpg"
+                  class="img-fluid rounded-3"
+                  alt="Large round plush Vuf-Vuf dog bed in light grey"
+              /></a>
+              <div class="card-body ps-0">
+                <span class="d-block text-uppercase mb-0 fw-semibold"
+                  >Fleur</span
+                >
+                <span class="fw-light">£85</span>
+              </div>
+            </div>
+          </div>
+          <!-- Product #3 -->
+          <div class="col-4">
+            <div class="card border-0 flex-fill">
+              <a class="product-img stretched-link" href="#new-collection-title"
+                ><img
+                  src="img/winston.jpg"
+                  class="img-fluid rounded-3"
+                  alt="Wooden-framed Vuf-Vuf dog bed with a beige mattress cushion"
+              /></a>
+              <div class="card-body ps-0">
+                <span class="d-block text-uppercase mb-0 fw-semibold"
+                  >Winston</span
+                >
+                <span class="fw-light">£95</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SMALLER screen (new-products-sm) -->
+        <div
+          id="new-products-sm"
+          class="row d-flex justify-content-center mx-auto"
+        >
+          <!-- Carousel -->
+          <div id="carousel-products" class="col-12 p-0">
+            <div
+              id="new-products-carousel"
+              class="carousel carousel-dark slide"
+            >
+              <div class="carousel-inner">
+                <!-- Product #1 -->
+                <div class="carousel-item active">
+                  <div class="card new-product-card border-0 flex-fill">
+                    <a
+                      class="product-img stretched-link"
+                      href="/product-page.html"
+                      ><img
+                        src="img/toto1.jpg"
+                        class="card-img-top rounded-3"
+                        alt="Teepee-style Vuf-Vuf dog bed in light grey canvas with with cactus print"
+                    /></a>
+                    <div class="card-body ps-0 pb-0">
+                      <span class="d-block text-uppercase mb-0 fw-semibold"
+                        >Toto</span
+                      >
+                      <span class="fw-light">£75</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Product #2 -->
+                <div class="carousel-item">
+                  <div class="card new-product-card border-0 flex-fill">
+                    <a
+                      class="product-img stretched-link"
+                      href="#new-collection-title"
+                      ><img
+                        src="img/fleur.jpg"
+                        class="img-fluid rounded-3"
+                        alt="Large round plush Vuf-Vuf dog bed in light grey"
+                    /></a>
+                    <div class="card-body ps-0 pb-0">
+                      <span class="d-block text-uppercase mb-0 fw-semibold"
+                        >Fleur</span
+                      >
+                      <span class="fw-light">£85</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Product #3 -->
+                <div class="carousel-item">
+                  <div class="card new-product-card border-0 flex-fill">
+                    <a
+                      class="product-img stretched-link"
+                      href="#new-collection-title"
+                      ><img
+                        src="img/winston.jpg"
+                        class="img-fluid rounded-3"
+                        alt="Small wooden frame Vuf-Vuf dog bed with a beige mattress cushion"
+                    /></a>
+                    <div class="card-body ps-0 pb-0">
+                      <span class="d-block text-uppercase mb-0 fw-semibold"
+                        >Winston</span
+                      >
+                      <span class="fw-light">£95</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Carousel controls -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#new-products-carousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#new-products-carousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Learn More -->
+      <!-- LARGER screens (learn-more)-->
+      <div
+        id="learn-more"
+        class="row text-align-end position-relative m-auto"
+        style="display: none"
+      >
+        <!-- Text + Button -->
+        <div class="col-md-5 col-xs-6 me-3 offset-1">
+          <div
+            class="col-md-6 col-xs-7 z-1 position-absolute top-50 start-25 translate-middle-y translate-middle-x"
+          >
+            <h2 class="learn-more-txt display-6 fw-bold">
+              We're passionate about keeping your pooch happy & healthy
+            </h2>
+            <div class="col-9">
+              <p class="py-2">
+                For more than 15 years, Vuf-Vuf has been an industry leader
+                thanks to our innovative materials and literal magic.
+              </p>
+              <a class="btn border-0 px-3 pb-1 learn-more-btn" href="#features"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="col-md-5 col-sm-12 d-flex justify-content-start ps-0">
+          <img
+            src="img/learn-more.png"
+            class="learn-more-img img-fluid rounded-3"
+            alt="White and grey Havanese dog curled up in a blue and white chevron print Vuf-Vuf dog bed"
+          />
+        </div>
+      </div>
+      <!-- SMALLER screens (learn-more-sm) -->
+      <div id="learn-more-sm" class="row p-0 m-0 position-relative">
+        <!-- Text + Button -->
+        <div
+          class="learn-more-bkgd col-10 z-1 position-absolute top-50 translate-middle-y translate-middle-x rounded-3 offset-1"
+        >
+          <h2 class="learn-more-txt display-6 fw-bold m-auto">
+            We're passionate about keeping your pooch happy & healthy
+          </h2>
+          <p class="py-2">
+            For more than 15 years, Vuf-Vuf has been an industry leader thanks
+            to our innovative materials and literal magic.
+          </p>
+          <a class="btn border-0 px-3 pb-1 learn-more-btn" href="#features"
+            >Learn More</a
+          >
+        </div>
+        <!-- Image -->
+        <div class="col-12 p-0">
+          <img
+            src="img/learn-more-sq.jpg"
+            class="learn-more-img img-fluid"
+            alt="White and grey Havanese dog curled up in a blue and white chevron print Vuf-Vuf dog bed"
+          />
+        </div>
+      </div>
+      <!-- Features -->
+      <div class="section-container mx-auto px-5">
+        <div id="features" class="row mx-auto">
+          <div class="col-12">
+            <h2 id="features-h2" class="fs-4 mb-5 fw-semibold text-center">
+              What Makes Our Products Special...
+            </h2>
+          </div>
+          <!-- Feature #1 -->
+          <div class="col-lg-3 col-sm-6 col-xs-12 text-center mb-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 center-block"
+              height="25px"
+              width="25px"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+              />
+            </svg>
+            <h3 class="fs-5 mt-3">UK Made</h3>
+            <p>
+              100% of the materials used in our dog beds are sourced from within
+              the UK.
+            </p>
+          </div>
+          <!-- Feature #2 -->
+          <div class="col-lg-3 col-sm-6 col-xs-12 text-center mb-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-feather"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M15.807.531c-.174-.177-.41-.289-.64-.363a3.8 3.8 0 0 0-.833-.15c-.62-.049-1.394 0-2.252.175C10.365.545 8.264 1.415 6.315 3.1S3.147 6.824 2.557 8.523c-.294.847-.44 1.634-.429 2.268.005.316.05.62.154.88q.025.061.056.122A68 68 0 0 0 .08 15.198a.53.53 0 0 0 .157.72.504.504 0 0 0 .705-.16 68 68 0 0 1 2.158-3.26c.285.141.616.195.958.182.513-.02 1.098-.188 1.723-.49 1.25-.605 2.744-1.787 4.303-3.642l1.518-1.55a.53.53 0 0 0 0-.739l-.729-.744 1.311.209a.5.5 0 0 0 .443-.15l.663-.684c.663-.68 1.292-1.325 1.763-1.892.314-.378.585-.752.754-1.107.163-.345.278-.773.112-1.188a.5.5 0 0 0-.112-.172M3.733 11.62C5.385 9.374 7.24 7.215 9.309 5.394l1.21 1.234-1.171 1.196-.027.03c-1.5 1.789-2.891 2.867-3.977 3.393-.544.263-.99.378-1.324.39a1.3 1.3 0 0 1-.287-.018Zm6.769-7.22c1.31-1.028 2.7-1.914 4.172-2.6a7 7 0 0 1-.4.523c-.442.533-1.028 1.134-1.681 1.804l-.51.524zm3.346-3.357C9.594 3.147 6.045 6.8 3.149 10.678c.007-.464.121-1.086.37-1.806.533-1.535 1.65-3.415 3.455-4.976 1.807-1.561 3.746-2.36 5.31-2.68a8 8 0 0 1 1.564-.173"
+              />
+            </svg>
+            <h3 class="fs-5 mt-3">Hypoallergenic</h3>
+            <p>
+              Our dog beds are all hypoallergenic and reduce allergies by up to
+              75%.
+            </p>
+          </div>
+          <!-- Feature #3 -->
+          <div class="col-lg-3 col-sm-6 col-xs-12 text-center mb-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-percent"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0M4.5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5m7 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"
+              />
+            </svg>
+            <h3 class="fs-5 mt-3">Give Back</h3>
+            <p>
+              For every dog bed we sell, we donate 5% of profits to a local
+              animal shelter.
+            </p>
+          </div>
+          <!-- Feature #4 -->
+          <div class="col-lg-3 col-sm-6 col-xs-12 text-center mb-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-star"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+              />
+            </svg>
+            <h3 class="fs-5 mt-3">Literal Magic</h3>
+            <p>
+              Our dog beds contain magical properties that stop your dog from
+              snoring.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- FAQ -->
+      <div id="faq" class="row p-5 mx-auto">
+        <div class="col p-0">
+          <h2 class="fs-4 mb-4 fw-semibold">Frequently Asked Questions</h2>
+          <div class="accordion accordion-flush rounded-3" id="faq-accordion">
+            <!-- Accordion item #1 -->
+            <div class="accordion-item rounded-3 mb-3">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fw-semibold p-5 py-4 rounded-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Do you offer free returns?
+                </button>
+              </h3>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq-accordion"
+              >
+                <div class="accordion-body p-5">
+                  Yes, in the unlikely event that your pooch is not 100%
+                  satisfied with their new Vuf-Vuf bed, all orders include a
+                  returns slip and prepaid returns label.
+                </div>
+              </div>
+            </div>
+            <!-- Accordion item #2 -->
+            <div class="accordion-item rounded-3 mb-3">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fw-semibold p-5 py-4 rounded-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  How much does Next Day Delivery cost?
+                </button>
+              </h3>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq-accordion"
+              >
+                <div class="accordion-body p-5">
+                  The price of Next Day Delivery depends on the weight of the
+                  Vuf-Vuf bed you've purchased. Please see our more detailed
+                  <a href="#footer" class="link-offset-1"
+                    >shipping information</a
+                  >
+                  to check if Next Day Delivery is available for your postcode.
+                </div>
+              </div>
+            </div>
+            <!-- Accordion item #3 -->
+            <div class="accordion-item rounded-3 mb-3">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fw-semibold p-5 py-4 rounded-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Do you deliver to Scotland?
+                </button>
+              </h3>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq-accordion"
+              >
+                <div class="accordion-body p-5">
+                  Yes, we ship to all UK addresses! However, please note that
+                  Next Day Delivery cannot be guaranteed for the Scottish
+                  Highlands and Islands.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonials -->
+      <div class="section-container mx-auto px-2">
+        <div id="testimonials-title" class="row px-3 mx-auto">
+          <div class="col-12 p-0">
+            <h2 id="testimonials-h2" class="fs-4 fw-semibold text-center mb-0">
+              Testimonials
+            </h2>
+          </div>
+        </div>
+        <!-- LARGER screens (testimonials)-->
+        <div
+          id="testimonials"
+          class="row gx-4 px-3 d-flex justify-space-between mb-5"
+        >
+          <!-- Testimonial #1 -->
+          <div class="col-3">
+            <div class="card border-0 flex-fill">
+              <img
+                src="img/testimonial1.jpg"
+                class="card-img-top mb-3 rounded-3"
+                alt="Nala the Corgi curled up in her cozy fleece-lined Vuf-Vuf dog bed"
+              />
+              <div class="card-body pb-0">
+                <div class="star-rating mb-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="card-title">So cozy!!</h5>
+                <p class="card-text">
+                  Nala loves her new bed! It really is magic!!!
+                </p>
+                <p class="fs-6 fw-light mb-0">Helen R., 4 days ago</p>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial #2 -->
+          <div class="col-3">
+            <div class="card border-0 flex-fill">
+              <img
+                src="img/testimonial2.jpg"
+                class="card-img-top mb-3 rounded-3"
+                alt="Winston the Border Collie dozing in his plush Fleur Vuf-Vuf dog bed"
+              />
+              <div class="card-body pb-0">
+                <div class="star-rating mb-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <h5 class="card-title">Quality bed</h5>
+                <p class="card-text">
+                  A bit pricier than I would normally go for but the quality is
+                  excellent. Hamish is a fan!
+                </p>
+                <p class="fs-6 fw-light mb-0">William G., 6 days ago</p>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial #3 -->
+          <div class="col-3">
+            <div class="card border-0 flex-fill">
+              <img
+                src="img/testimonial3.jpg"
+                class="card-img-top mb-3 rounded-3"
+                alt="Kwini the Great Dane snuggled up in her ultra plush Vuf-Vuf dog bed"
+              />
+              <div class="card-body pb-0">
+                <div class="star-rating mb-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="card-title">Beautiful</h5>
+                <p class="card-text">
+                  Finally a dog bed that suits our home decor! Kwini is of
+                  course in heaven. Will be recommending!
+                </p>
+                <p class="fs-6 fw-light mb-0">Peace M., 2 weeks ago</p>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial #4 -->
+          <div class="col-3">
+            <div class="card border-0 flex-fill">
+              <img
+                src="img/testimonial4.jpg"
+                class="card-img-top mb-3 rounded-3"
+                alt="Ellie the Cavapoo posing in her green and beige geometric print Vuf-Vuf dog bed"
+              />
+              <div class="card-body pb-0">
+                <div class="star-rating mb-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="card-title">Perfect size</h5>
+                <p class="card-text">
+                  Ellie sleeps in her Vuf-Vuf every night and no more snoring!!
+                  Will be buying extras in case you ever go out of business, can
+                  never be without again!!
+                </p>
+                <p class="fs-6 fw-light mb-0">Peter J., 3 weeks ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SMALLER screens (testimonials-sm)-->
+        <div
+          id="testimonials-sm"
+          class="row d-flex justify-content-center mx-auto"
+        >
+          <!-- Carousel -->
+          <div id="carousel-testimonial" class="col-12">
+            <div id="testimonial-carousel" class="carousel carousel-dark slide">
+              <div class="carousel-inner">
+                <!-- Testimonial 1 -->
+                <div class="carousel-item active">
+                  <div class="card testimonial-card border-0 flex-fill">
+                    <img
+                      src="img/testimonial1.jpg"
+                      class="card-img-top mb-3 rounded-3"
+                      alt="Nala the Corgi curled up in her cozy fleece-lined Vuf-Vuf dog bed"
+                    />
+                    <div class="card-body pb-0">
+                      <div class="star-rating mb-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <h5 class="card-title">So cozy!!</h5>
+                      <p class="card-text">
+                        Nala loves her new bed! It really is magic!!!
+                      </p>
+                      <p class="fs-6 fw-light mb-0">Helen R., 4 days ago</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Testimonial #2 -->
+                <div class="carousel-item">
+                  <div class="card testimonial-card border-0 flex-fill">
+                    <img
+                      src="img/testimonial2.jpg"
+                      class="card-img-top mb-3 rounded-3"
+                      alt="Winston the Border Collie dozing in his plush Fleur Vuf-Vuf dog bed"
+                    />
+                    <div class="card-body pb-0">
+                      <div class="star-rating mb-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <h5 class="card-title">Quality bed</h5>
+                      <p class="card-text">
+                        A bit pricier than I would normally go for but the
+                        quality is excellent. Hamish is a fan!
+                      </p>
+                      <p class="fs-6 fw-light mb-0">William G., 6 days ago</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Testimonial #3 -->
+                <div class="carousel-item">
+                  <div class="card testimonial-card border-0 flex-fill">
+                    <img
+                      src="img/testimonial3.jpg"
+                      class="card-img-top mb-3 rounded-3"
+                      alt="Kwini the Great Dane snuggled up in her extra large and ultra plush Vuf-Vuf dog bed"
+                    />
+                    <div class="card-body pb-0">
+                      <div class="star-rating mb-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <h5 class="card-title">Beautiful</h5>
+                      <p class="card-text">
+                        Finally a dog bed that suits our home decor! Kwini is of
+                        course in heaven. Will be recommending!
+                      </p>
+                      <p class="fs-6 fw-light mb-0">Peace M., 2 weeks ago</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Testimonial #4 -->
+                <div class="carousel-item">
+                  <div class="card testimonial-card border-0 flex-fill">
+                    <img
+                      src="img/testimonial4.jpg"
+                      class="card-img-top mb-3 rounded-3"
+                      alt="Ellie the Cavapoo posing in her green and beige geometric print Vuf-Vuf dog bed"
+                    />
+                    <div class="card-body pb-0">
+                      <div class="star-rating mb-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <h5 class="card-title">Perfect size</h5>
+                      <p class="card-text">
+                        Ellie sleeps in her Vuf-Vuf every night and no more
+                        snoring!! Will be buying extras in case you ever go out
+                        of business, can never be without again!!
+                      </p>
+                      <p class="fs-6 fw-light mb-0">Peter J., 3 weeks ago</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Carousel controls -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#testimonial-carousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#testimonial-carousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer id="footer" class="row d-flex mx-auto pb-5">
+        <!-- Footer links -->
+        <div id="footer-links-div" class="col-lg-5 col-md-12 order-2 mb-5">
+          <ul id="footer-links">
+            <li class="mb-3">
+              <a href="#footer" class="link-offset-1">Returns & Warrenty</a>
+            </li>
+            <li class="mb-3">
+              <a href="#footer" class="link-offset-1">Shipping</a>
+            </li>
+            <li class="mb-3">
+              <a href="#footer" class="link-offset-1">Terms of Service</a>
+            </li>
+            <li class="mb-3">
+              <a href="#footer" class="link-offset-1">Privacy Policy</a>
+            </li>
+          </ul>
+          <div id="social-icons" class="d-flex gap-2 mt-4">
+            <a href="#footer">
+              <!-- Instagram -->
+              <svg
+                alt="Instagram icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-instagram mx-1"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                />
+              </svg>
+            </a>
+            <a href="#footer">
+              <!-- Facebook  -->
+              <svg
+                alt="Facebook icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-facebook mx-1"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                />
+              </svg>
+            </a>
+            <a href="#footer">
+              <!-- Youtube -->
+              <svg
+                alt="YouTube icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-youtube mx-1"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                />
+              </svg>
+            </a>
+            <a href="#footer">
+              <!-- Twitter -->
+              <svg
+                alt="Twitter icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-twitter mx-1"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- Newsletter form -->
+        <div class="col-lg-7 col-md-12 p-0 order-1 mb-4 p-0">
+          <form id="newsletter-form" class="p-5">
+            <legend class="mb-4">Sign up for our Newsletter</legend>
+            <div class="mb-3">
+              <label for="fname" class="form-label">First name</label>
+              <input type="text" class="form-control" id="fname" required />
+            </div>
+            <div class="mb-3">
+              <label for="email-address" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="email-address"
+                aria-describedby="emailHelp"
+                required
+              />
+              <div id="emailHelp" class="form-text mb-4">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <button
+              id="footer-btn"
+              type="submit"
+              class="btn border-0 px-3 pb-1 footer-btn"
+            >
+              Sign Up
+            </button>
+          </form>
+        </div>
+        <!-- Modal -->
+        <div id="confirm-submit" class="modal" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title p-2 pt-3">You're on the list!</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body p-4 text-center">
+                <p>As a thank you, here's 10% off your next Vuf-Vuf order:</p>
+                <p><strong>VFVF10</strong></p>
+                <p>(apply at checkout)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Font Awesome (icons) -->
+    <script
+      src="https://kit.fontawesome.com/e94fd5170c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS -->
+    <script src="/script.js"></script>
+  </body>
+</html>

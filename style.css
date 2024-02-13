@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #212529;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #e2e2df;
+  transition: all 0.5s;
+}
+
+.navbar-scroll {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-links a:link,
+.navbar-links a:visited,
+.navbar-icons a:link,
+.navbar-icons a:visited {
+  color: #212529;
+  transition: all 0.5s;
+}
+
+.navbar-links a:hover,
+.navbar-links a:active,
+.navbar-links a:focus,
+.navbar-icons a:hover,
+.navbar-icons a:active,
+.navbar-icons a:focus {
+  background-color: #606653;
+  color: #fff;
+  border-radius: 0.5rem;
+  transition: all 0.5s;
+}
+
+.navbar-links a:focus,
+.navbar-icons a:focus {
+  border-color: none !important;
+  color: #fff !important;
+  background-color: #606653 !important;
+  box-shadow: none;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: 0 0 0 5px rgba(96, 102, 83, 0.26) !important;
+}
+
+/* Products & Testimonials */
+.browse-products {
+  margin-top: 0.2rem !important;
+}
+
+.browse-products-lnk {
+  font-size: 0.75rem !important;
+}
+
+.product-img:hover {
+  opacity: 80%;
+}
+
+.new-product-card,
+.testimonial-card {
+  padding: 2rem 2rem !important;
+  margin: 0 2rem 2rem 2rem !important;
+}
+
+.testimonial-card {
+  margin-top: 0 !important;
+}
+
+/* Links */
+a:link,
+a:visited {
+  color: #212529;
+  transition: all 0.5s;
+}
+
+a:hover,
+a:active {
+  color: #606653;
+  transition: all 0.5s;
+}
+
+a:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 5px rgba(96, 102, 83, 0.26);
+  border-radius: 0.5rem;
+}
+
+/* Buttons */
+.btn:link,
+.btn:visited,
+.btn {
+  color: #fff;
+  background-color: #343c24;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn:active {
+  background-color: #606653;
+  color: #fff;
+}
+
+/* Accordions */
+.accordion-button,
+.accordion-item {
+  background-color: #fff;
+}
+
+.accordion-button,
+.accordion-body {
+  padding: 1.5rem !important;
+}
+
+.accordion-button:focus,
+.accordion-button:active,
+.accordion-button:hover {
+  color: #212529;
+  box-shadow: none;
+  background-color: rgba(96, 102, 83, 0.26) !important;
+  border-radius: 0.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(96, 102, 83, 0.26) !important;
+}
+
+/* Footer */
+footer {
+  background-color: #e2e2df;
+}
+
+#footer-links {
+  list-style-type: none;
+}
+
+#social-icons {
+  padding-left: 2rem;
+}
+
+/* Forms */
+.form-control:focus {
+  border-color: #dee2e6;
+  box-shadow: 0 0 0 5px rgba(96, 102, 83, 0.26);
+}
+
+.navbar-links a:focus {
+  border-color: #dee2e6;
+  color: #fff !important;
+  background-color: #606653 !important;
+}
+
+/* MEDIA QUERIES */
+/* Bootstrap breakpoint: sm (>= 576px) */
+@media only screen and (min-width: 576px) {
+  .browse-products {
+    justify-content: flex-end !important;
+  }
+
+  .browse-products-lnk {
+    font-size: 1rem !important;
+  }
+
+  .new-product-card,
+  .testimonial-card {
+    padding: 2rem 2rem !important;
+    margin: 1rem 7rem 2.5rem 7rem !important;
+  }
+
+  .testimonial-card {
+    margin-top: 0 !important;
+  }
+}
+
+/* Bootstrap breakpoint: md (>= 768px) */
+@media only screen and (min-width: 768px) {
+  .main-container,
+  .section-container {
+    padding: 0 2.5rem !important;
+  }
+}
+
+/* Bootstrap breakpoint: lg (>= 992px) */
+@media only screen and (min-width: 992px) {
+  #new-collection-title,
+  #related-products-title {
+    margin-bottom: 2rem !important;
+  }
+
+  footer {
+    padding: 3rem !important;
+  }
+
+  #footer-links {
+    padding-top: 3rem !important;
+  }
+
+  #footer-links-div {
+    order: 1 !important;
+  }
+
+  form {
+    background-color: #f1f1ef;
+    border-radius: 0.5rem;
+    margin: 1.5rem;
+  }
+}
+
+/* Bootstrap breakpoint: xl (>= 1200 px) */
+@media only screen and (min-width: 1200px) {
+  .main-container,
+  .section-container {
+    padding: 0 6.5rem !important;
+  }
+
+  footer {
+    padding: 3rem 5rem !important;
+  }
+}
